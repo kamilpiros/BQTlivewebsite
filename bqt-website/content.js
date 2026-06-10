@@ -26,7 +26,7 @@ const CONTENT = {
       founder: "Who",
       inquire: "Contact",
       switchAdvisory: "Advisory",
-      switchCapital: "KMU Nachfolge",
+      switchCapital: "SME Succession",
     },
 
     splash: {
@@ -43,10 +43,10 @@ const CONTENT = {
       },
       capital: {
         index: "II",
-        titleA: "KMU Nachfolge",
+        titleA: "SME Succession",
         titleB: "",
-        desc: "We acquire Swiss SMEs with our own capital. So that what has been built over decades carries on.",
-        cta: "KMU Nachfolge",
+        desc: "We acquire Swiss SMEs with our own capital and run them for the long term. No fund, no exit pressure.",
+        cta: "SME Succession",
       },
     },
 
@@ -83,7 +83,7 @@ const CONTENT = {
         },
         {
           title: "Financing",
-          sub: "Bank · Mezzanine · Insurance",
+          sub: "Senior Debt · Leveraged Loans · Insurance",
           body: "The structure that fits the business, and the lender willing to carry it.",
           points: [
             "Raising and refinancing",
@@ -94,7 +94,7 @@ const CONTENT = {
         },
         {
           title: "Corporate Development",
-          sub: "Building · Succession",
+          sub: "Building · Development",
           body: "Building structures that hold: holdings, finance functions, investments.",
           points: [
             "Building finance functions",
@@ -125,12 +125,12 @@ const CONTENT = {
         { type: "Investment", desc: "Acquisition of a significant minority stake in a listed European company, including a joint venture with its largest shareholder." },
         { type: "Building", desc: "Built a service company with a volume above EUR 70m for a European fashion retail group, including its finance function. Today more than 40 employees." },
         { type: "Special Situations", desc: "Acquisition of a UK restaurant chain with more than 80 locations through a debt for equity swap." },
-        { type: "Restructuring", desc: "Sale of a GBP 145m mezzanine tranche at par, in the midst of Covid-19." },
+        { type: "Restructuring", desc: "Sale of a GBP 145m mezzanine tranche of a UK coffee chain at par, in the midst of Covid-19." },
         { type: "Financing", desc: "Bridge financing for the USD 43bn takeover of a Swiss agrochemicals group." },
       ],
 
       founderNum: "03 · Who",
-      founderTitleA: "Who is",
+      founderTitleA: "The person",
       founderTitleB: "behind it.",
       founderIntro: "",
       founderRole: "Owner",
@@ -140,8 +140,8 @@ const CONTENT = {
       ],
 
       inquireNum: "04 · Contact",
-      inquireTitleA: "How can I",
-      inquireTitleB: "help?",
+      inquireTitleA: "The direct",
+      inquireTitleB: "line.",
       inquireIntro: "",
       inquireHeading: "",
       inquireBlurb: "",
@@ -154,8 +154,8 @@ const CONTENT = {
 
     capital: {
       eyebrow: "II · KMU Nachfolge",
-      heroTitleA: "Übernehmen,",
-      heroTitleB: "um zu behalten.",
+      heroTitleA: "Übernehmen.",
+      heroTitleB: "Weiterführen.",
       heroStatement: "We acquire Swiss SMEs with our own capital and carry them forward for the long term. So that what has been built over decades carries on. No fund, no deadline, no forced exit.",
       heroMeta: [
         { label: "Capital", value: "Our own" },
@@ -271,8 +271,8 @@ const CONTENT = {
       office: "Office",
       contact: "Contact",
       officeLines: ["Jöchlerweg 4D", "6340 Baar, Switzerland", "+41 76 307 57 99"],
-      practiceLinks: { advisory: "Advisory", capital: "KMU Nachfolge" },
-      bottomMid: { advisory: "Advisory", capital: "KMU Nachfolge" },
+      practiceLinks: { advisory: "Advisory", capital: "SME Succession" },
+      bottomMid: { advisory: "Advisory", capital: "SME Succession" },
     },
 
     form: {
@@ -392,7 +392,7 @@ const CONTENT = {
         },
         {
           title: "Finanzierung",
-          sub: "Bank · Mezzanine · Versicherung",
+          sub: "Senior Debt · Leveraged Loans · Insurance",
           body: "Die Struktur, die zum Geschäft passt, und der Geldgeber, der sie mitträgt.",
           points: [
             "Aufnahme und Refinanzierung",
@@ -403,7 +403,7 @@ const CONTENT = {
         },
         {
           title: "Corporate Development",
-          sub: "Aufbau · Nachfolge",
+          sub: "Aufbau · Weiterentwicklung",
           body: "Strukturen aufbauen, die tragen: Holdings, Finanzfunktionen, Beteiligungen.",
           points: [
             "Aufbau von Finanzfunktionen",
@@ -449,8 +449,8 @@ const CONTENT = {
       ],
 
       inquireNum: "04 · Kontakt",
-      inquireTitleA: "Wie kann ich",
-      inquireTitleB: "helfen?",
+      inquireTitleA: "Der direkte",
+      inquireTitleB: "Draht.",
       inquireIntro: "",
       inquireHeading: "",
       inquireBlurb: "",
@@ -463,8 +463,8 @@ const CONTENT = {
 
     capital: {
       eyebrow: "II · KMU Nachfolge",
-      heroTitleA: "Übernehmen,",
-      heroTitleB: "um zu behalten.",
+      heroTitleA: "Übernehmen.",
+      heroTitleB: "Weiterführen.",
       heroStatement: "Wir übernehmen Schweizer KMU mit eigenem Kapital und führen sie langfristig weiter.\nDamit weiterläuft, was über Jahrzehnte aufgebaut wurde.\nKein Fonds, keine Laufzeit, kein Exitzwang.",
       heroMeta: [
         { label: "Kapital", value: "Eigenes" },
@@ -625,8 +625,7 @@ const CONTENT = {
   },
 };
 
-// KMU Nachfolge ist bewusst nur auf Deutsch verfügbar
+// Die KMU Nachfolge Detailseite ist bewusst nur auf Deutsch verfügbar
 CONTENT.en.capital = CONTENT.de.capital;
-CONTENT.en.splash.capital = CONTENT.de.splash.capital;
 
 window.CONTENT = CONTENT;

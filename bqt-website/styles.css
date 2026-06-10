@@ -1266,11 +1266,13 @@ html[data-logo="original"] .logo__image { display: flex; }
 @media (max-width: 900px) {
   .splash { overflow-y: auto; }
   .splash__top .mono { display: none; }
+  .splash__bottom span:nth-child(2) { display: none; }
   .splash__doors { grid-template-columns: 1fr; }
   .splash__divider { display: none; }
   .door { padding: 48px var(--pad-x) 40px; border-bottom: 1px solid var(--line); }
   .door__title { font-size: clamp(38px, 11vw, 64px); }
   .nav__center { display: none; }
+  .nav__back { display: none; }
   .nav__right { gap: 12px; }
   .logo__image img { height: 38px; }
   .pillars, .people { grid-template-columns: 1fr; }
