@@ -46,11 +46,8 @@ function App() {
   const [arm, setArm] = useState(null);
   const [leaving, setLeaving] = useState(false);
 
-  // Theme: day = light, night = dark. Manual toggle persists.
-  const getAutoTheme = () => {
-    const h = new Date().getHours();
-    return (h >= 7 && h < 19) ? "light" : "dark";
-  };
+  // Theme: light by default. Manual toggle persists.
+  const getAutoTheme = () => "light";
   const [theme, setThemeState] = useState(() => {
     try { return localStorage.getItem("bqt_theme") || getAutoTheme(); }
     catch { return getAutoTheme(); }
