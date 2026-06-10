@@ -6,7 +6,7 @@ const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
   "palette": "navyRed",
   "typePair": "serifMono",
   "startArm": "splash",
-  "lang": "en",
+  "lang": "de",
   "logoVariant": "original"
 }/*EDITMODE-END*/;
 
@@ -70,8 +70,8 @@ function App() {
 
   // Language: persist in localStorage, separate from tweaks (user-facing toggle)
   const [lang, setLangState] = useState(() => {
-    try { return localStorage.getItem("bqt_lang") || tweaks.lang || "en"; }
-    catch { return tweaks.lang || "en"; }
+    try { return localStorage.getItem("bqt_lang") || tweaks.lang || "de"; }
+    catch { return tweaks.lang || "de"; }
   });
   const setLang = (l) => {
     setLangState(l);
