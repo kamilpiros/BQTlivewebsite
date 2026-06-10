@@ -83,13 +83,13 @@ const CONTENT = {
         },
         {
           title: "Financing",
-          sub: "Senior Debt · Leveraged Loans · Insurance",
+          sub: "From senior debt to equity",
           body: "The structure that fits the business, and the lender willing to carry it.",
           points: [
             "Raising and refinancing",
-            "Credit insurance, working capital",
-            "Mezzanine and equity",
-            "Covenants",
+            "Senior debt and WC financings",
+            "Mezz and equity like instruments",
+            "Trade credit insurance",
           ],
         },
         {
@@ -121,7 +121,7 @@ const CONTENT = {
       transactionsTitleB: "worked on.",
       transactionsIntro: "A selection from more than ten years. Partly under my own name, partly as an employee of Credit Suisse, Partners Group and JC Holding.",
       transactions: [
-        { type: "Financing", desc: "Trade credit insurance programme with an insured credit line of EUR 50m for an international retail group, structured and implemented." },
+        { type: "Financing", desc: "Trade credit insurance programme with an insured credit line of EUR 50m for an international retail group." },
         { type: "Investment", desc: "Acquisition of a significant minority stake in a listed European company, including a joint venture with its largest shareholder." },
         { type: "Building", desc: "Built a service company with a volume above EUR 70m for a European fashion retail group, including its finance function. Today more than 40 employees." },
         { type: "Special Situations", desc: "Acquisition of a UK restaurant chain with more than 80 locations through a debt for equity swap." },
@@ -131,17 +131,17 @@ const CONTENT = {
 
       founderNum: "03 · Who",
       founderTitleA: "The person",
-      founderTitleB: "behind it.",
+      founderTitleB: "behind.",
       founderIntro: "",
       founderRole: "Owner",
       founderBio: [
         "I founded BQT in early 2025. Before that I spent four years at JC Holding, responsible for finance, M&A and investments. Earlier stations: Partners Group in London and Baar with a focus on leveraged loans, real estate and special situations, and Credit Suisse in Zurich in structured finance and credit risk. More than ten years of transaction work in total.",
-        "I am married, father of two small children and enjoy sports.",
+        "I am married, father of two and enjoy sports.",
       ],
 
       inquireNum: "04 · Contact",
-      inquireTitleA: "The direct",
-      inquireTitleB: "line.",
+      inquireTitleA: "Let\u2019s",
+      inquireTitleB: "talk.",
       inquireIntro: "",
       inquireHeading: "",
       inquireBlurb: "",
@@ -235,7 +235,7 @@ const CONTENT = {
       founderRole: "Owner",
       founderBio: [
         "I founded BQT in early 2025. I started out at Credit Suisse, lending to Swiss companies. At Partners Group I then executed acquisitions and financings and supported companies through difficult phases. Most recently I spent four years in retail, responsible for the finances, acquisitions and investments of a large retail group, helping to build its structures from the ground up.",
-        "I am married, father of two small children and enjoy sports.",
+        "I am married, father of two and enjoy sports.",
       ],
       founderFacts: [
         { dt: "Languages", dd: "German · English" },
@@ -303,12 +303,10 @@ const CONTENT = {
         q03p: "Background, what appeals, what is missing.",
         q04: "LinkedIn (optional).",
         q04p: "linkedin.com/in/…",
-        q05: "CV (optional).",
-        q05p: "Drag a PDF here or click.",
       },
       disclaimer: "",
       successHead: "Received.",
-      successBody: "I will get back to you within two business days.",
+      successBody: "I will get back to you promptly.",
     },
   },
 
@@ -392,13 +390,13 @@ const CONTENT = {
         },
         {
           title: "Finanzierung",
-          sub: "Senior Debt · Leveraged Loans · Insurance",
+          sub: "Von Senior Debt bis Equity",
           body: "Die Struktur, die zum Geschäft passt, und der Geldgeber, der sie mitträgt.",
           points: [
             "Aufnahme und Refinanzierung",
-            "Kreditversicherung, Working Capital",
-            "Mezzanine und Eigenkapital",
-            "Covenants",
+            "Senior Debt und WC Finanzierungen",
+            "Mezz und EK-nahe Instrumente",
+            "Warenkreditversicherung",
           ],
         },
         {
@@ -430,7 +428,7 @@ const CONTENT = {
       transactionsTitleB: "gearbeitet habe.",
       transactionsIntro: "Eine Auswahl aus über zehn Jahren. Teils unter eigenem Namen, teils als Angestellter bei Credit Suisse, Partners Group und JC Holding.",
       transactions: [
-        { type: "Finanzierung", desc: "Warenkreditversicherungsprogramm mit EUR 50 Mio. versicherter Kreditlinie für eine internationale Handelsgruppe, strukturiert und umgesetzt." },
+        { type: "Finanzierung", desc: "Warenkreditversicherungsprogramm mit EUR 50 Mio. versicherter Kreditlinie für eine internationale Handelsgruppe." },
         { type: "Beteiligung", desc: "Erwerb einer signifikanten Minderheitsbeteiligung an einem börsennotierten europäischen Unternehmen, inklusive Joint Venture mit dessen grösstem Aktionär." },
         { type: "Aufbau", desc: "Aufbau einer Servicegesellschaft mit über EUR 70 Mio. Volumen für eine europäische Modehandelsgruppe, inklusive Finanzfunktion. Heute über 40 Mitarbeitende." },
         { type: "Special Situations", desc: "Übernahme einer britischen Restaurantkette mit über 80 Standorten im Rahmen eines Debt for Equity Swap." },
@@ -445,12 +443,12 @@ const CONTENT = {
       founderRole: "Inhaber",
       founderBio: [
         "Ich habe BQT Anfang 2025 gegründet. Davor war ich vier Jahre bei JC Holding zuständig für Finance, M&A und Investments. Frühere Stationen: Partners Group in London und Baar mit Fokus auf Leveraged Loans, Real Estate und Special Situations sowie Credit Suisse in Zürich im Structured Finance und Kreditrisiko. Zusammen über zehn Jahre Transaktionsarbeit.",
-        "Ich bin verheiratet, Vater von zwei kleinen Kindern und habe Freude an Sport.",
+        "Ich bin verheiratet, Vater von zwei Kindern und habe Freude an Sport.",
       ],
 
       inquireNum: "04 · Kontakt",
-      inquireTitleA: "Der direkte",
-      inquireTitleB: "Draht.",
+      inquireTitleA: "Lass uns",
+      inquireTitleB: "sprechen.",
       inquireIntro: "",
       inquireHeading: "",
       inquireBlurb: "",
@@ -477,7 +475,6 @@ const CONTENT = {
       approachTitleB: "vor.",
       approachIntro: [
         "Kein Search Fund, kein Private Equity Vehikel. Eigenes Geld, ein kleiner Kreis von Mitinvestoren und Zeit.",
-        "Drei Schritte, bewusst einfach gehalten.",
       ],
 
       pillars: [
@@ -547,7 +544,7 @@ const CONTENT = {
       founderRole: "Inhaber",
       founderBio: [
         "Ich habe BQT Anfang 2025 gegründet. Angefangen habe ich bei der Credit Suisse in der Kreditvergabe an Schweizer Unternehmen. Bei Partners Group habe ich danach Übernahmen und Finanzierungen umgesetzt und Unternehmen durch schwierige Phasen begleitet. Zuletzt war ich vier Jahre im Einzelhandel: Dort habe ich die Finanzen, Zukäufe und Beteiligungen einer grossen Handelsgruppe verantwortet und die Strukturen dafür von Grund auf mit aufgebaut.",
-        "Ich bin verheiratet, Vater von zwei kleinen Kindern und habe Freude an Sport.",
+        "Ich bin verheiratet, Vater von zwei Kindern und habe Freude an Sport.",
       ],
       founderFacts: [
         { dt: "Sprachen", dd: "Deutsch · Englisch" },
@@ -615,12 +612,10 @@ const CONTENT = {
         q03p: "Werdegang, was reizt, was fehlt.",
         q04: "LinkedIn (optional).",
         q04p: "linkedin.com/in/…",
-        q05: "CV (optional).",
-        q05p: "PDF hierhin ziehen oder klicken.",
       },
       disclaimer: "",
       successHead: "Angekommen.",
-      successBody: "Ich melde mich innerhalb von zwei Arbeitstagen.",
+      successBody: "Ich melde mich umgehend.",
     },
   },
 };

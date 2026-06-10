@@ -25,17 +25,10 @@ function InquiryForm({ arm, lang }) {
   const set = (k) => (e) => setData({ ...data, [k]: e.target.value });
   const setChip = (k, v) => () => setData({ ...data, [k]: v });
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const payload = { bereich: arm, ...data };
-    if (FORM_ENDPOINT) {
-      fetch(FORM_ENDPOINT, {
-        method: "POST",
-        headers: { "Content-Type": "application/json", "Accept": "application/json" },
-        body: JSON.stringify(payload),
-      }).catch(() => {});
-      setSubmitted(true);
-    } else {
+    const mailFallback = () => {
       const subject = encodeURIComponent("Anfrage über bqtpartners.com (" + arm + ")");
       const body = encodeURIComponent(
         Object.entries(payload)
@@ -44,6 +37,21 @@ function InquiryForm({ arm, lang }) {
           .join("\n")
       );
       window.location.href = "mailto:" + FORM_FALLBACK_MAIL + "?subject=" + subject + "&body=" + body;
+    };
+    if (FORM_ENDPOINT) {
+      try {
+        const res = await fetch(FORM_ENDPOINT, {
+          method: "POST",
+          headers: { "Content-Type": "application/json", "Accept": "application/json" },
+          body: JSON.stringify(payload),
+        });
+        if (!res.ok) mailFallback();
+      } catch (err) {
+        mailFallback();
+      }
+      setSubmitted(true);
+    } else {
+      mailFallback();
       setSubmitted(true);
     }
   };
@@ -130,8 +138,8 @@ function InquiryForm({ arm, lang }) {
 
       <div className="form-submit">
         {f.disclaimer ? <p className="form-disclaimer">{f.disclaimer}</p> : <span></span>}
-        <button type="submit" className="btn btn--filled">
-          {f.submit} <span className="arrow">→</span>
+        <button type="submit" className="btn btn--accent btn--submit">
+          {CONTENT[lang].common.submit} <span className="arrow">→</span>
         </button>
       </div>
     </form>
@@ -142,52 +150,17 @@ function InquiryForm({ arm, lang }) {
 // LEADERS MINI FORM (capital · Führung)
 // ============================================
 function LeadersForm({ lang }) {
-  const { useState, useRef } = React;
+  const { useState } = React;
   const [submitted, setSubmitted] = useState(false);
   const [data, setData] = useState({ name: "", email: "", about: "", linkedin: "" });
-  const [file, setFile] = useState(null);
-  const [dragOver, setDragOver] = useState(false);
-  const fileRef = useRef(null);
   const f = CONTENT[lang].form;
   const lf = f.leaders;
   const set = (k) => (e) => setData({ ...data, [k]: e.target.value });
 
-  const acceptFile = (fl) => { if (fl) setFile(fl); };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     const fields = { bereich: "fuehrung", ...data };
-    if (FORM_ENDPOINT) {
-      try {
-        if (file) {
-          const fd = new FormData();
-          Object.entries(fields).forEach(([k, v]) => { if (v) fd.append(k, v); });
-          fd.append("cv", file, file.name);
-          const res = await fetch(FORM_ENDPOINT, {
-            method: "POST",
-            headers: { "Accept": "application/json" },
-            body: fd,
-          });
-          if (!res.ok) throw new Error("upload rejected");
-        } else {
-          await fetch(FORM_ENDPOINT, {
-            method: "POST",
-            headers: { "Content-Type": "application/json", "Accept": "application/json" },
-            body: JSON.stringify(fields),
-          });
-        }
-      } catch (err) {
-        // Fallback: deliver the fields even if the file upload fails
-        try {
-          await fetch(FORM_ENDPOINT, {
-            method: "POST",
-            headers: { "Content-Type": "application/json", "Accept": "application/json" },
-            body: JSON.stringify({ ...fields, cv_hinweis: file ? "CV Upload nicht möglich: " + file.name : "" }),
-          });
-        } catch (e2) {}
-      }
-      setSubmitted(true);
-    } else {
+    const mailFallback = () => {
       const subject = encodeURIComponent("Anfrage über bqtpartners.com (fuehrung)");
       const body = encodeURIComponent(
         Object.entries(fields)
@@ -196,6 +169,21 @@ function LeadersForm({ lang }) {
           .join("\n")
       );
       window.location.href = "mailto:" + FORM_FALLBACK_MAIL + "?subject=" + subject + "&body=" + body;
+    };
+    if (FORM_ENDPOINT) {
+      try {
+        const res = await fetch(FORM_ENDPOINT, {
+          method: "POST",
+          headers: { "Content-Type": "application/json", "Accept": "application/json" },
+          body: JSON.stringify(fields),
+        });
+        if (!res.ok) mailFallback();
+      } catch (err) {
+        mailFallback();
+      }
+      setSubmitted(true);
+    } else {
+      mailFallback();
       setSubmitted(true);
     }
   };
@@ -231,28 +219,9 @@ function LeadersForm({ lang }) {
         <label className="form-row__label">{lf.q04}</label>
         <input value={data.linkedin} onChange={set("linkedin")} placeholder={lf.q04p} />
       </div>
-      <div className="form-row">
-        <div className="form-row__num">05</div>
-        <label className="form-row__label">{lf.q05}</label>
-        <div
-          className={"dropzone" + (dragOver ? " dropzone--over" : "") + (file ? " dropzone--filled" : "")}
-          onClick={() => { if (fileRef.current) fileRef.current.click(); }}
-          onDragOver={(e) => { e.preventDefault(); setDragOver(true); }}
-          onDragLeave={() => setDragOver(false)}
-          onDrop={(e) => { e.preventDefault(); setDragOver(false); acceptFile(e.dataTransfer.files && e.dataTransfer.files[0]); }}
-        >
-          <span className="dropzone__label">{file ? file.name : lf.q05p}</span>
-          {file ? (
-            <button type="button" className="dropzone__clear" aria-label="Entfernen"
-              onClick={(e) => { e.stopPropagation(); setFile(null); }}>×</button>
-          ) : null}
-        </div>
-        <input ref={fileRef} type="file" accept=".pdf,.doc,.docx" style={{ display: "none" }}
-          onChange={(e) => acceptFile(e.target.files && e.target.files[0])} />
-      </div>
       <div className="form-submit">
         <span></span>
-        <button type="submit" className="btn btn--filled">
+        <button type="submit" className="btn btn--accent btn--submit">
           {CONTENT[lang].common.submit} <span className="arrow">→</span>
         </button>
       </div>
