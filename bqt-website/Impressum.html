@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Impressum · BQT Partners</title>
+  <meta name="robots" content="noindex" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <script>
+    // Match the main site's day/night mode
+    (function () {
+      var t;
+      try { t = localStorage.getItem("bqt_theme"); } catch (e) {}
+      if (!t) {
+        var h = new Date().getHours();
+        t = (h >= 7 && h < 19) ? "light" : "dark";
+      }
+      document.documentElement.dataset.theme = t;
+    })();
+  </script>
+
+  <style>
+    .legal-page {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px var(--pad-x) 96px;
+    }
+    .legal-page__top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 72px;
+    }
+    .legal-page h1 {
+      font-family: var(--font-display);
+      font-size: clamp(40px, 6vw, 72px);
+      line-height: 1;
+      letter-spacing: -0.015em;
+      margin-bottom: 56px;
+    }
+    .legal-page h2 {
+      font-family: var(--font-display);
+      font-size: 28px;
+      letter-spacing: -0.01em;
+      margin: 56px 0 16px;
+    }
+    .legal-page p {
+      font-size: 15px;
+      line-height: 1.65;
+      color: var(--ink-soft);
+      margin-bottom: 14px;
+    }
+    .legal-page .firm {
+      border-top: 1px solid var(--line-strong);
+      border-bottom: 1px solid var(--line);
+      padding: 28px 0;
+      margin-bottom: 8px;
+    }
+    .legal-page .firm p { margin-bottom: 4px; color: var(--ink); }
+    .legal-page .firm .mono { color: var(--ink-mute); margin-bottom: 12px; display: block; }
+    .legal-page a { color: var(--ink); border-bottom: 1px solid var(--line-strong); transition: color 180ms ease, border-color 180ms ease; }
+    .legal-page a:hover { color: var(--accent); border-color: var(--accent); }
+    .legal-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--ink-mute);
+      border: none !important;
+      transition: color 180ms ease;
+    }
+    .legal-back:hover { color: var(--accent); }
+    .legal-note {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 0.04em;
+      color: var(--ink-mute);
+      border: 1px dashed var(--line-strong);
+      padding: 12px 16px;
+      margin: 16px 0;
+    }
+    .legal-page footer {
+      margin-top: 96px;
+      padding-top: 24px;
+      border-top: 1px solid var(--line);
+      display: flex;
+      justify-content: space-between;
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--ink-mute);
+    }
+  </style>
+</head>
+<body>
+  <main class="legal-page">
+    <div class="legal-page__top">
+      <a class="legal-back" href="index.html"><span>←</span><span>Zurück</span></a>
+      <span class="mono" style="color: var(--ink-mute);">BQT Partners GmbH · Baar</span>
+    </div>
+
+    <h1><em style="color: var(--ink-soft);">Impressum.</em></h1>
+
+    <h2>Impressum</h2>
+    <div class="firm">
+      <span class="mono">Verantwortlich für den Inhalt dieser Website</span>
+      <p>BQT Partners GmbH</p>
+      <p>Jöchlerweg 4D</p>
+      <p>6340 Baar, Schweiz</p>
+      <p style="margin-top: 12px;">Vertretungsberechtigte Person: Cyril Bouquet, Geschäftsführer</p>
+      <p>Mail: <a href="mailto:cyril.bouquet@bqtpartners.com">cyril.bouquet@bqtpartners.com</a></p>
+      <p>Telefon: +41 76 307 57 99</p>
+      <p style="margin-top: 12px;">Rechtsform: Gesellschaft mit beschränkter Haftung (GmbH)</p>
+      <p>Handelsregister: Kanton Zug</p>
+      <p>UID: CHE‑294.796.784</p>
+    </div>
+
+    <h2>Keine Beratung, keine Offerte</h2>
+    <p>Die Inhalte dieser Website dienen ausschliesslich der allgemeinen Information über die Tätigkeit der BQT Partners GmbH. Sie stellen weder eine Finanz-, Rechts- oder Steuerberatung noch ein Angebot oder eine Aufforderung zum Kauf oder Verkauf von Finanzinstrumenten oder Unternehmen dar. Aus den Inhalten dieser Website entsteht kein Vertragsverhältnis.</p>
+
+    <h2>Haftungsausschluss</h2>
+    <p>Die Inhalte dieser Website wurden mit Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte wird jedoch keine Gewähr übernommen. Haftungsansprüche gegen die BQT Partners GmbH wegen Schäden materieller oder immaterieller Art, die aus dem Zugriff auf diese Website, deren Nutzung oder Nichtnutzung entstehen, werden im gesetzlich zulässigen Umfang ausgeschlossen.</p>
+
+    <h2>Verweise und Links</h2>
+    <p>Verweise und Links auf Websites Dritter liegen ausserhalb des Verantwortungsbereichs der BQT Partners GmbH. Der Zugriff und die Nutzung solcher Websites erfolgen auf eigene Gefahr. Für Inhalte verlinkter Seiten sind ausschliesslich deren Betreiber verantwortlich.</p>
+
+    <h2>Urheberrechte</h2>
+    <p>Die auf dieser Website enthaltenen Inhalte, insbesondere Texte und Gestaltung, sind urheberrechtlich geschützt und gehören der BQT Partners GmbH oder den jeweils genannten Rechteinhabern. Die auf dieser Website gezeigten Logos früherer Arbeitgeber sind Marken der jeweiligen Unternehmen und dienen ausschliesslich der sachlichen Information über den beruflichen Werdegang. Eine Reproduktion von Inhalten dieser Website bedarf der vorgängigen schriftlichen Zustimmung.</p>
+
+    <h2>Datenschutzerklärung</h2>
+    <p>Verantwortlich für die Bearbeitung von Personendaten im Zusammenhang mit dieser Website ist die BQT Partners GmbH, Jöchlerweg 4D, 6340 Baar (Kontakt siehe oben). Die Bearbeitung richtet sich nach dem schweizerischen Datenschutzgesetz (DSG).</p>
+    <p>Beim Besuch dieser Website werden keine Cookies gesetzt und keine Analyse- oder Trackingtools eingesetzt. Für Einstellungen wie Sprache und Darstellungsmodus werden lokal im Browser Werte gespeichert (Local Storage); diese enthalten keine Personendaten und dienen keinem Tracking. Technisch bedingt können beim Aufruf der Website durch den Hosting-Anbieter Zugriffsdaten (z. B. IP-Adresse, Datum und Uhrzeit des Zugriffs, Browsertyp) in Logfiles bearbeitet werden. Diese Daten dienen ausschliesslich der Sicherstellung eines störungsfreien Betriebs und der Sicherheit und werden nicht mit anderen Datenquellen verknüpft.</p>
+    <p>Zur Darstellung der Schriften wird der Dienst Google Fonts verwendet. Dabei wird beim Laden der Website eine Verbindung zu Servern von Google hergestellt und die IP-Adresse übermittelt. Wer dies nicht wünscht, kann das Laden externer Schriften im Browser unterbinden.</p>
+    <p>Wer per Mail, Telefon oder über die Formulare auf dieser Website Kontakt aufnimmt, übermittelt freiwillig Personendaten (z. B. Name, Mailadresse, Angaben zur Anfrage sowie allfällig mitgesendete Dokumente wie ein Lebenslauf). Diese Daten werden ausschliesslich zur Bearbeitung und Beantwortung der Anfrage verwendet, vertraulich behandelt und nicht an Dritte weitergegeben, ausser dies ist zur Bearbeitung der Anfrage nötig oder gesetzlich vorgeschrieben. Die Daten werden gelöscht, sobald sie für den Zweck der Bearbeitung nicht mehr benötigt werden und keine gesetzlichen Aufbewahrungspflichten bestehen.</p>
+    <p>Für die Übermittlung der Formulare wird der Dienst Formspree (Formspree, Inc., USA) genutzt. Die eingegebenen Angaben und mitgesendete Dokumente werden dabei durch Formspree verarbeitet und an uns weitergeleitet; es gelten ergänzend die Datenschutzbestimmungen von Formspree. Wer dies nicht wünscht, kann sich direkt per Mail oder Telefon melden.</p>
+    <p>Betroffene Personen haben insbesondere das Recht auf Auskunft über die zu ihrer Person bearbeiteten Daten sowie auf Berichtigung oder Löschung. Anfragen dazu sind an die oben genannte Kontaktadresse zu richten.</p>
+
+    <h2>Anwendbares Recht und Gerichtsstand</h2>
+    <p>Auf das Verhältnis zwischen den Nutzern dieser Website und der BQT Partners GmbH ist ausschliesslich schweizerisches Recht anwendbar. Gerichtsstand ist Baar, Kanton Zug, soweit gesetzlich zulässig.</p>
+
+    <footer>
+      <span>© 2026 BQT Partners GmbH</span>
+      <span>Stand: Juni 2026</span>
+    </footer>
+  </main>
+</body>
+</html>
