@@ -31,6 +31,6 @@ Die Formulare senden an Formspree (Endpoint in `inquiry.jsx`, Konstante `FORM_EN
 
 ## Hinweise
 
-- Tag/Nacht-Modus: automatisch nach Uhrzeit (7–19 Uhr hell), manuell umschaltbar, Wahl wird im Browser gespeichert.
+- Hell/Dunkel-Modus: Standard ist hell, manuell umschaltbar (Sonne/Mond oben rechts), Wahl wird im Browser gespeichert.
 - Der Bereich KMU Nachfolge ist bewusst nur auf Deutsch verfügbar.
 - Keine Cookies, kein Tracking.

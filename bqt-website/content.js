@@ -52,8 +52,8 @@ const CONTENT = {
 
     advisory: {
       eyebrow: "I · Advisory",
-      heroTitleA: "Advisory",
-      heroTitleB: "",
+      heroTitleA: "Understand.",
+      heroTitleB: "Execute.",
       heroStatement: "I advise on acquisitions, financing and the situations in between. Before this: more than ten years of transaction work at Credit Suisse, Partners Group and JC Holding. Since 2025 under my own name.",
       heroMeta: [
         { label: "Office", value: "Baar / Zürich" },
@@ -122,9 +122,8 @@ const CONTENT = {
       transactionsIntro: "A selection from more than ten years. Partly under my own name, partly as an employee of Credit Suisse, Partners Group and JC Holding.",
       transactions: [
         { type: "Financing", desc: "Trade credit insurance programme with an insured credit line of EUR 50m for an international retail group." },
-        { type: "Investment", desc: "Acquisition of a significant minority stake in a listed European company, including a joint venture with its largest shareholder." },
-        { type: "Building", desc: "Built a service company with a volume above EUR 70m for a European fashion retail group, including its finance function. Today more than 40 employees." },
-        { type: "Special Situations", desc: "Acquisition of a UK restaurant chain with more than 80 locations through a debt for equity swap." },
+        { type: "Corporate Development", desc: "Built a service company with a volume above EUR 70m for a European fashion retail group, including its finance function. Today more than 40 employees." },
+        { type: "M&A", desc: "Acquisition of a UK restaurant chain with more than 80 locations through a debt for equity swap." },
         { type: "Restructuring", desc: "Sale of a GBP 145m mezzanine tranche of a UK coffee chain at par, in the midst of Covid-19." },
         { type: "Financing", desc: "Bridge financing for the USD 43bn takeover of a Swiss agrochemicals group." },
       ],
@@ -359,8 +358,8 @@ const CONTENT = {
 
     advisory: {
       eyebrow: "I · Advisory",
-      heroTitleA: "Advisory",
-      heroTitleB: "",
+      heroTitleA: "Verstehen.",
+      heroTitleB: "Umsetzen.",
       heroStatement: "Ich berate bei Zukäufen, Finanzierungen und den Situationen dazwischen. Davor: über zehn Jahre Transaktionsarbeit bei Credit Suisse, Partners Group und JC Holding. Seit 2025 unter eigenem Namen.",
       heroMeta: [
         { label: "Standort", value: "Baar / Zürich" },
@@ -429,9 +428,8 @@ const CONTENT = {
       transactionsIntro: "Eine Auswahl aus über zehn Jahren. Teils unter eigenem Namen, teils als Angestellter bei Credit Suisse, Partners Group und JC Holding.",
       transactions: [
         { type: "Finanzierung", desc: "Warenkreditversicherungsprogramm mit EUR 50 Mio. versicherter Kreditlinie für eine internationale Handelsgruppe." },
-        { type: "Beteiligung", desc: "Erwerb einer signifikanten Minderheitsbeteiligung an einem börsennotierten europäischen Unternehmen, inklusive Joint Venture mit dessen grösstem Aktionär." },
-        { type: "Aufbau", desc: "Aufbau einer Servicegesellschaft mit über EUR 70 Mio. Volumen für eine europäische Modehandelsgruppe, inklusive Finanzfunktion. Heute über 40 Mitarbeitende." },
-        { type: "Special Situations", desc: "Übernahme einer britischen Restaurantkette mit über 80 Standorten im Rahmen eines Debt for Equity Swap." },
+        { type: "Corporate Development", desc: "Aufbau einer Servicegesellschaft mit über EUR 70 Mio. Volumen für eine europäische Modehandelsgruppe, inklusive Finanzfunktion. Heute über 40 Mitarbeitende." },
+        { type: "M&A", desc: "Übernahme einer britischen Restaurantkette mit über 80 Standorten im Rahmen eines Debt for Equity Swap." },
         { type: "Restrukturierung", desc: "Verkauf einer GBP 145 Mio. Mezzanine Tranche einer britischen Kaffeehauskette zu pari, inmitten der Covid-19 Zeit." },
         { type: "Finanzierung", desc: "Brückenfinanzierung für die USD 43 Mrd. Übernahme eines Schweizer Agrochemiekonzerns." },
       ],
